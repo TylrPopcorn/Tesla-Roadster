@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero-Page-2</title>
+    <!-- LINK THAT BULMA NEEDS IN ORDER TO WORK CORRECTLY-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles/helpers.css" />
+  </head>
+  <!-- CSS CLASSES-->
+  <style>
+    .hero {
+      background: black url(imgs/roadster1.png) center / cover;
+    }
+
+    .navbar-item:hover {
+      color: red;
+    }
+
+    @media (max-width: 1024px) {
+      .hero {
+        background: black url(imgs/roadster2.png) center / cover;
+      }
+    }
+    @media (max-width: 764px) {
+      .hero {
+        background: black url(imgs/roadster2.png) center / cover;
+      }
+    }
+  </style>
+  <body>
+    <!-- hero -->
+    <section class="hero is-fullheight is-info">
+      <nav class="hero-head" style="background-color: rgba(0, 0, 0, 0.2)" ;>
+        <!-- columns -->
+        <div
+          class="columns is-mobile is-marginless heading has-text-weight-bold has-text-black"
+        >
+          <!-- column 1 -->
+          <div class="column left">
+            <figure class="navbar-item image">
+              <a href="#"
+                ><img src="imgs/logo.svg" style="width: 6.25rem; height: 3rem"
+              /></a>
+            </figure>
+          </div>
+
+          <!-- column 2 -->
+          <div
+            class="column center desktop is-size-5"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)"
+          >
+            <a href="#" class="navbar-item">MODEL S</a>
+            <a href="#" class="navbar-item">MODEL X</a>
+            <a href="#" class="navbar-item">MODEL 3</a>
+            <a href="#" class="navbar-item has-text-white">ROADSTER</a>
+            <a href="#" class="navbar-item">ENERGY</a>
+          </div>
+
+          <!-- column 3 -->
+          <div class="column right is-size-5">
+            <a href="#"
+              ><p class="navbar-item desktop has-text-black">SHOP</p></a
+            >
+            <a href="#"
+              ><p class="navbar-item desktop has-text-black">SIGN IN</p></a
+            >
+            <figure class="navbar-item image center">
+              <a href="#"
+                ><img src="imgs/hamburger.png" style="height: 3rem"
+              /></a>
+            </figure>
+          </div>
+        </div>
+      </nav>
+
+      <!-- section -->
+      <header class="hero-body">
+        <div
+          class="is-overlay single-spaced"
+          style="top: 92px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9)"
+        >
+          <!-- TITLE text-->
+          <h1 class="subtitle is-3 has-text-weight-light center has-text-white">
+            Tesla
+          </h1>
+          <h2 class="title is-1 center has-text-white">Roadster</h2>
+        </div>
+      </header>
+
+      <!-- Hero foot -->
+      <main class="hero-foot center" style="padding: 2rem">
+        <div id="" style="max-width: 768px; margin: auto">
+          <div class="columns is-mobile is-multiline">
+            <!-- Section 1 -->
+            <div id="a" class="column is-12">
+              <p class="has-text-centered has-text-white">
+                The quickest car in the world, with record-setting<br />acceleration,
+                range and performance.
+              </p>
+            </div>
+
+            <!-- Section 2 -->
+            <div id="b" class="column is-4 center-column">
+              <p class="title has-text-white">
+                <i
+                  class="fas fa-techometer-alt has-text-grey-light"
+                  style="width: 0.75rem; height: 0.75rem"
+                ></i>
+                1.9<span class="is-size-3">s</span>
+              </p>
+              <p class="subtitle has-text-white is-7">0-60 mph</p>
+            </div>
+
+            <!-- Section 3 -->
+            <div
+              id="c"
+              class="column is-4 center-column"
+              style="border-left: 1px solid gray"
+            >
+              <p class="title has-text-white">
+                <span class="is-size-5">*</span>250<span class="is-size-5"
+                  >mph</span
+                >
+              </p>
+              <p class="subtitle is-7 has-text-white">Top Speed</p>
+            </div>
+
+            <!-- Section 4 -->
+            <div
+              id="d"
+              class="column is-4 center-column"
+              style="border-left: 1px solid gray"
+            >
+              <p class="title has-text-white">
+                620<span class="is-size-5">ml</span>
+              </p>
+              <p class="subtitle is-7 has-text-white">Mile Range</p>
+            </div>
+
+            <!-- Section 5 -->
+            <div id="e" class="column is-12">
+              <a
+                class="button is-inverted is-rounded is-outlined has-text-weight-bold"
+                style="
+                  width: 100%;
+                  border: 0.15em solid white;
+                  margin-top: 20px;
+                "
+              >
+                Reserve Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
